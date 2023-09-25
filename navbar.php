@@ -65,13 +65,33 @@
     .dropdowns:hover .dropdown-contents {
         display: block;
     }
-    .carousel_area{
-        margin-top:100px;
+
+    .carousel_area {
+        margin-top: 100px;
     }
-    @media screen and (max-width:600px){
-        .carousel_area{
-            margin-top:0px;
+
+    @media screen and (max-width:600px) {
+        .carousel_area {
+            margin-top: 0px;
         }
+    }
+
+    .error {
+        color: red;
+        size: 80%
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .error1 {
+        color: red;
+        size: 80%
+    }
+
+    .hidden1 {
+        display: none;
     }
     </style>
 </head>
@@ -1062,8 +1082,6 @@
                                             QTY : 1<br>
                                             <i class="fa fa-trash-o"></i><a href="#"><small>Remove</small></a></li>
                                         </div>
-
-
                                         <hr>
                                     </div>
                                     <div class="col-md-4">
@@ -1081,8 +1099,6 @@
                                             QTY : 1<br>
                                             <i class="fa fa-trash-o"></i><a href="#"><small>Remove</small></a></li>
                                         </div>
-
-
                                         <hr>
                                     </div>
                                 </div>
@@ -1107,36 +1123,170 @@
             </button>
         </div>
     </nav>
-
-    <script src="demo/main.js"></script>
+    <!-- login modal -->
+    <form action="" id="loginform">
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Login</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card">
+                                        <img src="img/login_image.jpg" class="img-fluid img-thumbnail" alt="image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon12">IN +91</span>
+                                </div>
+                                <input type="text" maxlength="10" onChange="checkInput1(this)"
+                                    onKeyup="checkInput1(this)" type="text" autocomplete="off" id="myform_phone1"
+                                    class="form-control" placeholder="Phone Number" aria-label="PnoneNumber"
+                                    aria-describedby="basic-addon12">
+                            </div>
+                            <div id="phone_error1" class="error1 hidden1">Please enter a valid phone number</div>
+                            <div class="row">
+                                <div class="col-md-7"></div>
+                                <div class="col-md-5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Request OTP</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Sign Up /Sign In</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1">IN +91</span>
+                <form action="" id="myform">
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card">
+                                        <img src="img/login_image.jpg" class="img-fluid img-thumbnail" alt="image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">IN +91</span>
+                                </div>
+                                <input type="text" maxlength="10" onChange="checkInput(this)" onKeyup="checkInput(this)"
+                                    type="text" autocomplete="off" id="myform_phone" class="form-control"
+                                    placeholder="Phone Number" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                            <div id="phone_error" class="error hidden">Please enter a valid phone number</div>
+                            <div class="row">
+                                <div class="col-md-7"></div>
+                                <div class="col-md-5"><button type="submit" class="btn btn-primary">Continue</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                                </div>
+                            </div>
                         </div>
-                        <input type="text" class="form-control" placeholder="Phone Number" aria-label="Username"
-                            aria-describedby="basic-addon1">
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Continue</button>
-                </div>
+                    <div class="modal-footer">
+                        <!-- <button type="button">Existing User? Log In </button> -->
+                        <button id="openModal2Btn" class="btn btn-outline-success" id="MybtnModal">Existing User? Log
+                            In</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
 
+    <script src="demo/main.js"></script>
 
+    <!-- script for login form validation for phone number -->
+    <script>
+    function validatePhoneNumber(input_str) {
+        var re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+
+        return re.test(input_str);
+    }
+
+    function validateForm(event) {
+        var phone = document.getElementById('myform_phone').value;
+        if (!validatePhoneNumber(phone)) {
+            document.getElementById('phone_error').classList.remove('hidden');
+        } else {
+            document.getElementById('phone_error').classList.add('hidden');
+            alert("validation success")
+        }
+        event.preventDefault();
+    }
+
+    document.getElementById('myform').addEventListener('submit', validateForm);
+    </script>
+    <!-- script for login form phone input validation -->
+    <script>
+    function validatePhoneNumber(input_str) {
+        var re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+
+        return re.test(input_str);
+    }
+
+    function validateForm(event) {
+        var phone = document.getElementById('myform_phone1').value;
+        if (!validatePhoneNumber(phone)) {
+            document.getElementById('phone_error1').classList.remove('hidden1');
+        } else {
+            document.getElementById('phone_error1').classList.add('hidden1');
+            alert("validation success")
+        }
+        event.preventDefault();
+    }
+
+    document.getElementById('loginform').addEventListener('submit', validateForm);
+    </script>
+    <!-- script for modal 2 login section -->
+    <script>
+    $(document).ready(function() {
+        // When the button in Modal 1 is clicked, open Modal 2
+        $("#openModal2Btn").click(function() {
+            $("#myModal2").modal('show');
+        });
+    });
+    </script>
+    <!-- number validation -->
+    <script>
+    function checkInput(ob) {
+        const invalidChars = /[^0-9]/gi;
+
+        if (invalidChars.test(ob.value)) {
+            ob.value = ob.value.replace(invalidChars, "");
+        }
+    };
+    </script>
+    <script>
+    function checkInput1(ob) {
+        const invalidChars = /[^0-9]/gi;
+
+        if (invalidChars.test(ob.value)) {
+            ob.value = ob.value.replace(invalidChars, "");
+        }
+    };
+    </script>
 </body>
 
 </html>
