@@ -65,6 +65,14 @@
     .dropdowns:hover .dropdown-contents {
         display: block;
     }
+    .carousel_area{
+        margin-top:100px;
+    }
+    @media screen and (max-width:600px){
+        .carousel_area{
+            margin-top:0px;
+        }
+    }
     </style>
 </head>
 
@@ -141,7 +149,7 @@
                                     <strong>Top Wear</strong>
                                 </li>
                                 <li>
-                                    <a href="#">All Top Wear</a>
+                                    <a href="all_top_wear.php">All Top Wear</a>
                                 </li>
                                 <li>
                                     <a href="#">TShirts</a>
