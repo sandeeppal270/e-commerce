@@ -1145,10 +1145,8 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="basic-addon12">IN +91</span>
                                 </div>
-                                <input type="text" maxlength="10" onChange="checkInput1(this)"
-                                    onKeyup="checkInput1(this)" autocomplete="off" id="myform_phone1"
-                                    class="form-control" placeholder="Phone Number" aria-label="PnoneNumber"
-                                    aria-describedby="basic-addon12">
+                                    <input type="text" pattern="[7-9]{1}[0-9]{9}" id="myform_phone1" class="form-control" placeholder="Phone number" aria-label="PnoneNumber"
+                                    aria-describedby="basic-addon12" onkeypress="return (event.charCode !=8 && event.charCode ==0 || ( event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)))" minlength="10" maxlength="10" autocomplete="off">
                             </div>
                             <div id="phone_error1" class="error1 hidden1">Please enter a valid phone number</div>
                             <div class="row">
@@ -1191,8 +1189,8 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="basic-addon1">IN +91</span>
                                 </div>
-                                <input type="text" maxlength="10" onChange="checkInput(this)" onKeyup="checkInput(this)" autocomplete="off" id="myform_phone" class="form-control"
-                                    placeholder="Phone Number" aria-label="Username" aria-describedby="basic-addon1">
+                                    <input type="text" id="myform_phone" pattern="[7-9]{1}[0-9]{9}" class="form-control" placeholder="Phone number" aria-label="PhoneNumber"
+                                    aria-describedby="basic-addon1" onkeypress="return (event.charCode !=8 && event.charCode ==0 || ( event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)))" minlength="10" maxlength="10" autocomplete="off">
                             </div>
                             <div id="phone_error" class="error hidden">Please enter a valid phone number</div>
                             <div class="row">
