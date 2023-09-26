@@ -4,50 +4,37 @@
             <div class="col-lg-2 col-md-6 single-footer-widget">
                 <h4>Top Products</h4>
                 <ul>
-                    <li><a href="#">Managed Website</a></li>
-                    <li><a href="#">Manage Reputation</a></li>
-                    <li><a href="#">Power Tools</a></li>
-                    <li><a href="#">Marketing Service</a></li>
+                    <li><a href="blog.php">Blogs</a></li>
+                    <li><a href="contact.php">Contact Us</a></li>
+
                 </ul>
                 <small>PAY SECURELY BY</small>
                 <div>
                     <figure><img src="img/payment_logo/logo.png" alt="payment_logo_image"></figure>
                 </div>
-
             </div>
             <div class="col-lg-2 col-md-6 single-footer-widget">
                 <h4>Quick Links</h4>
                 <ul>
                     <li><a href="#">Jobs</a></li>
-                    <li><a href="#">Brand Assets</a></li>
-                    <li><a href="#">Investor Relations</a></li>
-                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Track Order</a></li>
                 </ul>
-
             </div>
             <div class="col-lg-2 col-md-6 single-footer-widget">
                 <h4>Features</h4>
                 <ul>
-                    <li><a href="blog.php">Blogs</a></li>
-                    <li><a href="#">Brand Assets</a></li>
-                    <li><a href="#">Investor Relations</a></li>
                     <li><a href="#">Terms of Service</a></li>
                 </ul>
-
             </div>
             <div class="col-lg-2 col-md-6 single-footer-widget">
                 <h4>Resources</h4>
                 <ul>
-                    <li><a href="#">Guides</a></li>
-                    <li><a href="#">Research</a></li>
-                    <li><a href="#">Experts</a></li>
-                    <li><a href="#">Agencies</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
                 </ul>
-
             </div>
             <div class="col-lg-4 col-md-6 single-footer-widget">
                 <h4>Newsletter</h4>
-                <p>You can trust us. we only send promo offers,</p>
+                <!-- <p>You can trust us. we only send promo offers,</p> -->
                 <div class="form-wrap" id="mc_embed_signup">
                     <form target="_blank"
                         action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
@@ -249,23 +236,17 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid d-flex">
-            <div class="block"><img src="/img/footer_image/seller.svg" alt="advertise_image"><span class="pl-2">Become a seller</span></div>
-            <div class="block pl-2"><img src="/img/footer_image/advertise.svg" alt="advertise_image"><span class="pl-2">Advertise</span></div>
-            <div class="block pl-2"><img src="/img/footer_image/gift.svg" alt="advertise_image"><span class="pl-2">Gift Cards</span></div>
-            <div class="block pl-2"><img src="/img/footer_image/help.svg" alt="advertise_image"><span class="pl-2">Help Center</span></div>
-        </div>
         <hr style="border-top: dotted 1px;color
         :white;" />
         <div class="footer-bottom row align-items-center">
-            <p class="footer-text m-0 col-lg-8 col-md-12">
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            <div class="footer-text m-0 col-lg-8 col-md-12">
+                
                 Copyright &copy;<script>
                 document.write(new Date().getFullYear());
                 </script> All rights reserved | <i class="fa fa-heart-o" aria-hidden="true"></i><a href="#"
                     target="_blank"></a>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
+                
+                                        </div>
             <div class="col-lg-4 col-md-12 footer-social">
                 <div class="row p-1">
                     <div class="col text-uppercase"><small>Keep in touch</small></div>
@@ -274,7 +255,6 @@
                 <a href="#"><i class="fa fa-twitter" title="Follow to twitter"></i></a>
                 <a href="#"><i class="fa fa-instagram" title="Follow to instagram"></i></a>
                 <a href="#"><i class="fa fa-pinterest" title="Follow to pinterest"></i></a>
-              
             </div>
         </div>
     </div>

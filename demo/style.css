@@ -78,8 +78,10 @@ button{
 }
 
 .dropdown .menu a:hover{
-    color: #9b9b9b;
+    color: #050008;
+    background-color: rgb(230, 225, 238);
 }
+
 
 @media screen and (min-width: 800px) {
     .navbar{
@@ -163,7 +165,17 @@ button{
     .dropdown:hover .menu{
         /* height: 50vh; */
         height:50vh;
-        padding: 2em;
+        padding:2em;
+        width:auto;
+    }
+}
+.dropdown:hover .menu{
+    
+    width:100vh;
+}
+@media screen and (max-width:600px){
+    .dropdown:hover .menu{
+    
         width:auto;
     }
 }
@@ -259,6 +271,7 @@ button{
     /* Toggle class for javascript */
     .mega-menu-show{
         height: 50vh;
+       
     }
     #top_bar{
         display:none;

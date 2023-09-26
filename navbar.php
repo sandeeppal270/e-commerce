@@ -93,11 +93,11 @@
     .hidden1 {
         display: none;
     }
-    /* css for tracking.php file */
-    .tracking_section{
-        margin-top:100px;
-    }
 
+    /* css for tracking.php file */
+    .tracking_section {
+        margin-top: 100px;
+    }
     </style>
 </head>
 
@@ -141,7 +141,7 @@
                 <a href="index.php">
                     <li class="dropdown">
                         <div>
-                            <span>Home</span>
+                            <span class="text-dark text-uppercase">Home</span>
                             <span class="material-symbols-outlined">
                                 chevron_right
                             </span>
@@ -153,7 +153,7 @@
                 <!-- Mens -->
                 <li class="dropdown">
                     <div>
-                        <span>Men</span>
+                        <span class="text-dark text-uppercase">Men</span>
                         <span class="material-symbols-outlined">
                             chevron_right
                         </span>
@@ -180,7 +180,7 @@
                                     <a href="#">TShirts</a>
                                 </li>
                                 <li>
-                                    <a href="# ">Shirts</a>
+                                    <a href="#">Shirts</a>
                                 </li>
                             </ul>
                         </li>
@@ -308,7 +308,7 @@
                 <!-- Women section -->
                 <li class="dropdown">
                     <div>
-                        <span>Women</span>
+                        <span class="text-dark text-uppercase">Women</span>
                         <span class="material-symbols-outlined">
                             chevron_right
                         </span>
@@ -443,7 +443,7 @@
                 <!-- Kids section -->
                 <li class="dropdown">
                     <div>
-                        <span>Kids</span>
+                        <span class="text-dark text-uppercase">Kids</span>
                         <span class="material-symbols-outlined">
                             chevron_right
                         </span>
@@ -533,7 +533,7 @@
                 <!-- Home and Kitchen -->
                 <li class="dropdown">
                     <div>
-                        <span>Home & Kitchen</span>
+                        <span class="text-uppercase text-dark">Home & Kitchen</span>
                         <span class="material-symbols-outlined">
                             chevron_right
                         </span>
@@ -621,7 +621,7 @@
                 <!-- Beauty and Health -->
                 <li class="dropdown">
                     <div>
-                        <span>Beauty & Health</span>
+                        <span class="text-dark text-uppercase">Beauty & Health</span>
                         <span class="material-symbols-outlined">
                             chevron_right
                         </span>
@@ -698,7 +698,7 @@
                 <!-- Electronic -->
                 <li class="dropdown">
                     <div>
-                        <span>Electronic</span>
+                        <span class="text-dark text-uppercase">Electronic</span>
                         <span class="material-symbols-outlined">
                             chevron_right
                         </span>
@@ -1150,8 +1150,10 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="basic-addon12">IN +91</span>
                                 </div>
-                                    <input type="text" pattern="[7-9]{1}[0-9]{9}" id="myform_phone1" class="form-control" placeholder="Phone number" aria-label="PnoneNumber"
-                                    aria-describedby="basic-addon12" onkeypress="return (event.charCode !=8 && event.charCode ==0 || ( event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)))" minlength="10" maxlength="10" autocomplete="off">
+                                <input type="text" pattern="[7-9]{1}[0-9]{9}" id="myform_phone1" class="form-control"
+                                    placeholder="Phone number" aria-label="PnoneNumber" aria-describedby="basic-addon12"
+                                    onkeypress="return (event.charCode !=8 && event.charCode ==0 || ( event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)))"
+                                    minlength="10" maxlength="10" autocomplete="off">
                             </div>
                             <div id="phone_error1" class="error1 hidden1">Please enter a valid phone number</div>
                             <div class="row">
@@ -1194,8 +1196,10 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="basic-addon1">IN +91</span>
                                 </div>
-                                    <input type="text" id="myform_phone" pattern="[7-9]{1}[0-9]{9}" class="form-control" placeholder="Phone number" aria-label="PhoneNumber"
-                                    aria-describedby="basic-addon1" onkeypress="return (event.charCode !=8 && event.charCode ==0 || ( event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)))" minlength="10" maxlength="10" autocomplete="off">
+                                <input type="text" id="myform_phone" pattern="[7-9]{1}[0-9]{9}" class="form-control"
+                                    placeholder="Phone number" aria-label="PhoneNumber" aria-describedby="basic-addon1"
+                                    onkeypress="return (event.charCode !=8 && event.charCode ==0 || ( event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)))"
+                                    minlength="10" maxlength="10" autocomplete="off">
                             </div>
                             <div id="phone_error" class="error hidden">Please enter a valid phone number</div>
                             <div class="row">
