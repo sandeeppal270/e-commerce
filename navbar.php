@@ -141,7 +141,7 @@
                 <a href="index.php">
                     <li class="dropdown">
                         <div>
-                            <span class="text-dark text-uppercase">Home</span>
+                            <span class="text-dark text-uppercase"><strong>Home</strong></span>
                             <span class="material-symbols-outlined">
                                 chevron_right
                             </span>
@@ -153,7 +153,7 @@
                 <!-- Mens -->
                 <li class="dropdown">
                     <div>
-                        <span class="text-dark text-uppercase">Men</span>
+                        <span class="text-dark text-uppercase"><strong>Men</strong></span>
                         <span class="material-symbols-outlined">
                             chevron_right
                         </span>
@@ -308,7 +308,7 @@
                 <!-- Women section -->
                 <li class="dropdown">
                     <div>
-                        <span class="text-dark text-uppercase">Women</span>
+                        <span class="text-dark text-uppercase"><strong>Women</strong></span>
                         <span class="material-symbols-outlined">
                             chevron_right
                         </span>
@@ -443,7 +443,7 @@
                 <!-- Kids section -->
                 <li class="dropdown">
                     <div>
-                        <span class="text-dark text-uppercase">Kids</span>
+                        <span class="text-dark text-uppercase"><strong>Kids</strong></span>
                         <span class="material-symbols-outlined">
                             chevron_right
                         </span>
@@ -533,7 +533,7 @@
                 <!-- Home and Kitchen -->
                 <li class="dropdown">
                     <div>
-                        <span class="text-uppercase text-dark">Home & Kitchen</span>
+                        <span class="text-uppercase text-dark"><strong>Home & Kitchen</strong></span>
                         <span class="material-symbols-outlined">
                             chevron_right
                         </span>
@@ -621,7 +621,7 @@
                 <!-- Beauty and Health -->
                 <li class="dropdown">
                     <div>
-                        <span class="text-dark text-uppercase">Beauty & Health</span>
+                        <span class="text-dark text-uppercase"><strong>Beauty & Health</strong></span>
                         <span class="material-symbols-outlined">
                             chevron_right
                         </span>
@@ -698,7 +698,7 @@
                 <!-- Electronic -->
                 <li class="dropdown">
                     <div>
-                        <span class="text-dark text-uppercase">Electronic</span>
+                        <span class="text-dark text-uppercase"><strong>Electronic</strong></span>
                         <span class="material-symbols-outlined">
                             chevron_right
                         </span>

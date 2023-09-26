@@ -50,19 +50,6 @@ button{
     cursor: pointer;
 }
 
-/* .btn{
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
-    background: #428aff;
-    padding: 0.5em 1.3em;
-    border-radius: 16px;
-    color: #fff;
-}
-
-.btn:hover{
-    background: #3877db;
-} */
-
 .menu-btn{
     margin-left: 1em;
     background: none;
