@@ -28,7 +28,7 @@
             <div class="col-lg-2 col-md-6 single-footer-widget">
                 <h4>Features</h4>
                 <ul>
-                    <li><a href="#">Jobs</a></li>
+                    <li><a href="blog.php">Blogs</a></li>
                     <li><a href="#">Brand Assets</a></li>
                     <li><a href="#">Investor Relations</a></li>
                     <li><a href="#">Terms of Service</a></li>

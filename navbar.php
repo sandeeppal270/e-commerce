@@ -93,6 +93,11 @@
     .hidden1 {
         display: none;
     }
+    /* css for tracking.php file */
+    .tracking_section{
+        margin-top:100px;
+    }
+
     </style>
 </head>
 

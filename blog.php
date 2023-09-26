@@ -28,6 +28,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
     </script>
+
 </head>
 
 <body>
@@ -36,9 +37,9 @@
     include 'navbar.php';
     ?>
     <!-- carousel section  -->
-   
+
     <!-- category section -->
-    
+
     <!--================Header Menu Area =================-->
 
     <!--================Home Banner Area =================-->
@@ -212,7 +213,8 @@
                                     <div class="input-group mb-3">
                                         <input type="text" class="form-control" placeholder="Search Keyword">
                                         <div class="input-group-append">
-                                            <button class="btn" type="button"><i class="ti-search"></i></button>
+                                            <button class="btn search_box" style="z-index:0;" type="button"><i
+                                                    class="ti-search"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -261,7 +263,6 @@
                                 </li>
                             </ul>
                         </aside>
-
                         <aside class="single_sidebar_widget popular_post_widget">
                             <h3 class="widget_title">Recent Post</h3>
                             <div class="media post_item">
