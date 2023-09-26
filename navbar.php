@@ -1146,7 +1146,7 @@
                                     <span class="input-group-text" id="basic-addon12">IN +91</span>
                                 </div>
                                 <input type="text" maxlength="10" onChange="checkInput1(this)"
-                                    onKeyup="checkInput1(this)" type="text" autocomplete="off" id="myform_phone1"
+                                    onKeyup="checkInput1(this)" autocomplete="off" id="myform_phone1"
                                     class="form-control" placeholder="Phone Number" aria-label="PnoneNumber"
                                     aria-describedby="basic-addon12">
                             </div>
@@ -1191,8 +1191,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="basic-addon1">IN +91</span>
                                 </div>
-                                <input type="text" maxlength="10" onChange="checkInput(this)" onKeyup="checkInput(this)"
-                                    type="text" autocomplete="off" id="myform_phone" class="form-control"
+                                <input type="text" maxlength="10" onChange="checkInput(this)" onKeyup="checkInput(this)" autocomplete="off" id="myform_phone" class="form-control"
                                     placeholder="Phone Number" aria-label="Username" aria-describedby="basic-addon1">
                             </div>
                             <div id="phone_error" class="error hidden">Please enter a valid phone number</div>
