@@ -98,6 +98,9 @@
     .tracking_section {
         margin-top: 100px;
     }
+    input:focus::placeholder{
+        color:transparent;
+    }
     </style>
 </head>
 
