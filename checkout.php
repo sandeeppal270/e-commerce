@@ -304,36 +304,36 @@
                                 <li>
                                     <a href="#">Fresh Blackberry
                                         <span class="middle">x 02</span>
-                                        <span class="last">$720.00</span>
+                                        <span class="last">&#8377;720.00</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">Fresh Tomatoes
                                         <span class="middle">x 02</span>
-                                        <span class="last">$720.00</span>
+                                        <span class="last">&#8377;720.00</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">Fresh Brocoli
                                         <span class="middle">x 02</span>
-                                        <span class="last">$720.00</span>
+                                        <span class="last">&#8377;720.00</span>
                                     </a>
                                 </li>
                             </ul>
                             <ul class="list list_2">
                                 <li>
                                     <a href="#">Subtotal
-                                        <span>$2160.00</span>
+                                        <span>&#8377;2160.00</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">Shipping
-                                        <span>Flat rate: $50.00</span>
+                                        <span>Flat rate: &#8377;50.00</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">Total
-                                        <span>$2210.00</span>
+                                        <span>&#8377;2210.00</span>
                                     </a>
                                 </li>
                             </ul>
