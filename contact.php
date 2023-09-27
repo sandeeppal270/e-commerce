@@ -73,25 +73,25 @@ include 'navbar.php';
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <input class="form-control border border-secondary" name="name" id="name"
-                                        type="text" placeholder="Enter your name">
+                                        type="text" placeholder="Enter your name" autocomplete="off">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <input class="form-control border border-secondary" name="email" id="email"
-                                        type="email" placeholder="Enter email address">
+                                        type="email" placeholder="Enter email address" autocomplete="off">
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-group">
                                     <input class="form-control border border-secondary" name="subject" id="subject"
-                                        type="text" placeholder="Enter Subject">
+                                        type="text" placeholder="Enter Subject" autocomplete="off">
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-group">
                                     <textarea class="form-control w-100 border border-secondary" name="message"
-                                        id="message" cols="30" rows="9" placeholder="Enter Message"></textarea>
+                                        id="message" cols="30" rows="9" placeholder="Enter Message" autocomplete="off"></textarea>
                                 </div>
                             </div>
                         </div>
