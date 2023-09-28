@@ -38,6 +38,7 @@
             document.getElementById('number2').value = value;
         }
     }
+
     function decrementValue2() {
         var value = parseInt(document.getElementById('number2').value, 10);
         value = isNaN(value) ? 0 : value;
@@ -47,6 +48,11 @@
         }
     }
     </script>
+    <style>
+        .coupan_button{
+            background-color:#71CD14;
+        }
+    </style>
 </head>
 
 <body>
@@ -145,7 +151,7 @@ include 'navbar.php';
                                             </select>
                                         </div>
                                     </li>
-                                  
+
                                     <li><i class="fa fa-trash-o"></i><a href="#"><small>Remove</small></a></li>
                                 </ul>
                             </div>
@@ -183,8 +189,8 @@ include 'navbar.php';
                         <span>Coupans</span>
                     </div>
                     <div class="col-md-6">
-                        <button class="btn btn-outline-success btn-sm w-50" data-toggle="modal"
-                            data-target="#exampleModalCenter">Apply</button>
+                        <button class="btn coupan_btn btn-sm w-50 text-white" data-toggle="modal"
+                            data-target="#exampleModalCenter" title="Apply Now">Apply</button>
                     </div>
                 </div>
                 <h3 class="order_summary mt-1">Price Details</h3>
@@ -230,8 +236,8 @@ include 'navbar.php';
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <input type="button" class="btn btn-outline-success w-75 mt-3"
-                            onclick="window.location.href='checkout.php';" value="CHECKOUT">
+                        <input type="button" class="btn w-75 mt-3 main_btn"
+                            onclick="window.location.href='checkout.php';" title="checkout the Product" value="CHECKOUT">
                     </div>
                 </div>
             </div>
@@ -249,11 +255,14 @@ include 'navbar.php';
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form class="form-inline">
-                        <div class="form-group mx-sm-3">
-                            <input type="text" class="form-control" id="inputPassword2" placeholder="Enter Coupon Code">
+                    <form action="">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Coupon Code"
+                            aria-label="Coupan Code" aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                            <button class="btn coupan_button text-white" type="button" id="button-addon2" title="Apply Coupon Code">Apply</button>
                         </div>
-                        <button type="submit" class="btn btn-success">APPLY</button>
+                    </div>
                     </form>
                 </div>
                 <div class="modal-footer">

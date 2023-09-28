@@ -101,6 +101,9 @@
     input:focus::placeholder{
         color:transparent;
     }
+    .search_bar{
+        background-color:#71CD14;
+    }
     </style>
 </head>
 
@@ -900,7 +903,7 @@
                 <input type="text" class="form-control" placeholder="Search for products & more"
                     aria-label="Recipient's username" aria-describedby="basic-addon2">
                 <div class="input-group-append">
-                    <span class="input-group-text bg-success" id="basic-addon2"><i
+                    <span class="input-group-text search_bar" id="basic-addon2"><i
                             class="fa fa-search fa-lg text-light"></i></span>
                 </div>
             </div>
@@ -964,7 +967,7 @@
             <a href="#" class="icons" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
                 aria-expanded="false">
                 <i class="fa fa-shopping-bag fa-lg text-dark"><sup
-                        class="rounded-circle p-1 text-dark bg-success"><strong>7</strong></sup></i></a>
+                        class="rounded-circle p-1 text-dark search_bar"><strong>7</strong></sup></i></a>
             <div class="dropdown">
                 <div class="dropdown-menu dropdown-menu-right mt-4" aria-labelledby="dropdownMenu2">
                     <div class="container-fluid">
@@ -1117,7 +1120,7 @@
                                         CART</a></button>
                             </div>
                             <div class="col-md-12">
-                                <input type="button" class="btn btn-outline-success btn-lg w-100 mt-1"
+                                <input type="button" class="main_btn w-100"
                                     onclick="window.location.href='checkout.php';" value="CHECKOUT">
                             </div>
                         </div>

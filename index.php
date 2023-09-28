@@ -794,49 +794,7 @@ include 'navbar.php';
                 <h3 class="category text-uppercase"><span>Unmissable Deals</span></h3>
                 <p class="text-center">We connect buyers and sellers</p>
             </div>
-            <!-- <div class="row">
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-feature">
-                        <a href="#" class="title">
-                            <i class="flaticon-money"></i>
-                            <h3>Money back gurantee</h3>
-                        </a>
-                        <p class="text-lowercase">15 DAYS FREE RETURNS</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-feature">
-                        <a href="#" class="title">
-                            <i class="flaticon-truck"></i>
-                            <h3>Free Delivery</h3>
-                        </a>
-                        <p>Know your margins.</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-feature">
-                        <a href="#" class="title">
-                            <i class="flaticon-support"></i>
-                            <h3>Alway support</h3>
-                        </a>
-                        <p>Thank you as always</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-feature">
-                        <a href="#" class="title">
-                            <i class="flaticon-blockchain"></i>
-                            <h3>Secure payment</h3>
-                        </a>
-                        <p>Support streamlined authentication</p>
-                    </div>
-                </div>
-            </div> -->
-
+        
             <div class="row justify-content-center">
                 <div class="product-item d-flex">
                     <div class="col-sm-6">
