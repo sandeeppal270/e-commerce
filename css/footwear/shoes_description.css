@@ -234,7 +234,7 @@ p {
   }
 
   .size_section input:checked {
-    background: #28A745;
+    background: #71cd14;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
     text-shadow: 0 1px 0px #808080;
   }
@@ -243,4 +243,5 @@ p {
     content: attr(label);
     text-align: center;
   }
+  
 

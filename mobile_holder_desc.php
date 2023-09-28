@@ -120,67 +120,6 @@
                 <div class="row">
                     <small>(Inclusive of all taxes)</small>
                 </div>
-                <!-- <div class="row mt-3">
-                    <span class="size">SELECT SIZE (UK / India)</span>
-                    
-                </div> -->
-                <!-- <div class="row mt-3">
-                    <div class="p-1"> <button type="button"
-                            class="btn btn-light btn-circle border-success btn-md">6</button>
-                    </div>
-                    <div class="p-1"> <button type="button"
-                            class="btn btn-light btn-circle border-success btn-md">7</button>
-                    </div>
-                    <div class="p-1"> <button type="button"
-                            class="btn btn-light btn-circle border-success btn-md">8</button>
-                    </div>
-                    <div class="p-1"> <button type="button"
-                            class="btn btn-light btn-circle border-success btn-md">9</button>
-                    </div>
-                    <div class="p-1"> <button type="button"
-                            class="btn btn-light btn-circle border-success btn-md">10</button>
-                    </div>
-                    <div class="p-1"> <button type="button"
-                            class="btn btn-light btn-circle border-success btn-md">11</button>
-                    </div>
-                    <div class="p-1"> <button type="button"
-                            class="btn btn-light btn-circle border-success btn-md">12</button>
-                    </div>
-                   
-                </div> -->
-                <!-- <div class="row mt-4">
-                    <span class="size">AVIALABLE COLORS</span>
-                </div>
-                <div class="container-fluid">
-
-                </div> -->
-                <!-- <div class="row mt-1">
-                    <div class="p-1">
-                        <a href="#">
-                            <div class="card rounded-circle color_image img_card">
-                                <img src="img/shoes_image/img2.jpg" title="color image" alt="image"
-                                    class="img-thumbnail img-fluid rounded-circle">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="p-1">
-                        <a href="#">
-                            <div class="card rounded-circle color_image img_card">
-                                <img src="img/shoes_image/color_image.jpg" title="color image" alt="image"
-                                    class="img-fluid img-thumbnail rounded-circle">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="p-1">
-                        <a href="#">
-                            <div class="card rounded-circle color_image img_card">
-                                <img src="img/shoes_image/img2.jpg" title="color image" alt="image"
-                                    class="img-thumbnail img-fluid rounded-circle">
-                            </div>
-                        </a>
-                    </div>
-
-                </div> -->
                 <div class="row mt-5">
                     <button class="btn btn-light btn-lg border-secondary" title="add to cart">ADD TO CART</button>
                     <button class="btn btn-success btn-lg mx-4" title="buy now">BUY NOW</button>
