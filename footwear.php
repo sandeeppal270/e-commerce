@@ -129,10 +129,6 @@
         width: 100%;
     }
 
-    .border-secondary:focus {
-        background-color: cyan;
-    }
-
     .side_bar {
         padding: 0px;
         margin: 0px;
@@ -168,7 +164,8 @@ include 'navbar.php';
         <div class="row">
             <div class="col-md-3 col-lg-3 col-sm-3 d-flex">
                 <div>FILTERS</div>
-                <div class="ml-5"><input type="reset" value="Clear All" class="border-white bg-white" onclick="resetForm()"></div>
+                <div class="ml-5"><input type="reset" value="Clear All" class="border-white bg-white"
+                        onclick="resetForm()"></div>
             </div>
             <div class="col-md-7 col-lg-7 col-sm-7">
                 <ul class="d-flex">
@@ -235,39 +232,40 @@ include 'navbar.php';
                             <div class="accordion-content">
                                 <p class="accordion-content-text">
                                 <div class="row size_section">
-                                    <div class="col-xs-3 p-2">
-                                        <button class="btn btn-white border border-secondary rounded-0">06</button>
+                                    <div class="col-xs-3 p-2" id="1">
+                                        <input type="button" value="06">
                                     </div>
-                                    <div class="col-xs-3 p-2">
-                                        <button class="btn btn-white border border-secondary rounded-0">07</button>
+                                    <div class="col-xs-3 p-2" id="2">
+                                        <input type="button" value="07">
                                     </div>
-                                    <div class="col-xs-3 p-2">
-                                        <button class="btn btn-white border border-secondary rounded-0">08</button>
+                                    <div class="col-xs-3 p-2" id="3">
+                                        <input type="button" value="08">
                                     </div>
-                                    <div class="col-xs-3 p-2">
-                                        <button class="btn btn-white border border-secondary rounded-0">09</button>
+                                    <div class="col-xs-3 p-2" id="4">
+                                        <input type="button" value="09">
                                     </div>
-                                    <div class="col-xs-3 p-2">
-                                        <button class="btn btn-white border border-secondary rounded-0">10</button>
+                                    <div class="col-xs-3 p-2" id="5">
+                                        <input type="button" value="10">
                                     </div>
-                                    <div class="col-xs-3 p-2">
-                                        <button class="btn btn-white border border-secondary rounded-0">11</button>
+                                    <div class="col-xs-3 p-2" id="6">
+                                        <input type="button" value="11">
                                     </div>
-                                    <div class="col-xs-3 p-2">
-                                        <button class="btn btn-white border border-secondary rounded-0">41</button>
+                                    <div class="col-xs-3 p-2" id="7">
+                                        <input type="button" value="41">
                                     </div>
-                                    <div class="col-xs-3 p-2">
-                                        <button class="btn btn-white border border-secondary rounded-0">42</button>
+                                    <div class="col-xs-3 p-2" id="8">
+                                        <input type="button" value="42">
                                     </div>
-                                    <div class="col-xs-3 p-2">
-                                        <button class="btn btn-white border border-secondary rounded-0">43</button>
+                                    <div class="col-xs-3 p-2" id="9">
+                                        <input type="button" value="43">
                                     </div>
-                                    <div class="col-xs-3 p-2">
-                                        <button class="btn btn-white border border-secondary rounded-0">44</button>
+                                    <div class="col-xs-3 p-2" id="10">
+                                        <input type="button" value="44">
                                     </div>
-                                    <div class="col-xs-3 p-2">
-                                        <button class="btn btn-white border border-secondary rounded-0">45</button>
+                                    <div class="col-xs-3 p-2" id="11">
+                                        <input type="button" value="45">
                                     </div>
+
                                 </div>
                                 </p>
                             </div>
