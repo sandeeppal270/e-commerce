@@ -142,7 +142,7 @@
         height: 240px;
     }
     </style>
-  <script>
+    <script>
     function resetForm() {
         document.getElementById("form_filter").reset();
     }
@@ -168,7 +168,8 @@ include 'navbar.php';
         <div class="row">
             <div class="col-md-3 col-lg-3 col-sm-3 d-flex">
                 <div>FILTERS</div>
-                <div class="ml-5"><input type="reset" value="Clear All" class="border-white" onclick="resetForm()">
+                <div class="ml-5"><input type="reset" value="Clear All" class="border-white bg-white"
+                        onclick="resetForm()">
                 </div>
             </div>
             <div class="col-md-7 col-lg-7 col-sm-7">
