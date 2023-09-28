@@ -98,11 +98,18 @@
     .tracking_section {
         margin-top: 100px;
     }
-    input:focus::placeholder{
-        color:transparent;
+
+    input:focus::placeholder {
+        color: transparent;
     }
-    .search_bar{
-        background-color:#71CD14;
+
+    .search_bar {
+        background-color: #71CD14;
+    }
+
+    .continue_btn {
+        background-color: #71CD14;
+        color: white;
     }
     </style>
 </head>
@@ -1145,13 +1152,9 @@
                     </div>
                     <div class="modal-body">
                         <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="card">
-                                        <img src="img/login_image.jpg" class="img-fluid img-thumbnail" alt="image">
-                                    </div>
-                                </div>
-                            </div>
+                            <figure>
+                                <img src="img/login_image.jpg" class="img-fluid img-thumbnail" alt="image">
+                            </figure>
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="basic-addon12">IN +91</span>
@@ -1162,15 +1165,10 @@
                                     minlength="10" maxlength="10" autocomplete="off">
                             </div>
                             <div id="phone_error1" class="error1 hidden1">Please enter a valid phone number</div>
-                            <div class="row">
-                                <div class="col-md-7"></div>
-                                <div class="col-md-5">
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary">Request OTP</button>
+                        <button type="submit" class="btn continue_btn">Request OTP</button>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -1191,13 +1189,9 @@
                 <form action="" id="myform">
                     <div class="modal-body">
                         <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="card">
-                                        <img src="img/login_image.jpg" class="img-fluid img-thumbnail" alt="image">
-                                    </div>
-                                </div>
-                            </div>
+                            <figure>
+                                <img src="img/login_image.jpg" class="img-fluid img-thumbnail" alt="image">
+                            </figure>
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="basic-addon1">IN +91</span>
@@ -1210,7 +1204,7 @@
                             <div id="phone_error" class="error hidden">Please enter a valid phone number</div>
                             <div class="row">
                                 <div class="col-md-7"></div>
-                                <div class="col-md-5"><button type="submit" class="btn btn-primary">Continue</button>
+                                <div class="col-md-5"><button type="submit" class="btn continue_btn">Continue</button>
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
                                 </div>
@@ -1219,7 +1213,7 @@
                     </div>
                     <div class="modal-footer">
                         <!-- <button type="button">Existing User? Log In </button> -->
-                        <button id="openModal2Btn" class="btn btn-outline-success" id="MybtnModal">Existing User? Log
+                        <button id="openModal2Btn" class="main_btn" id="MybtnModal">Existing User? Log
                             In</button>
                     </div>
                 </form>
