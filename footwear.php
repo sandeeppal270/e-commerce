@@ -129,10 +129,6 @@
         width: 100%;
     }
 
-    .border-secondary:focus {
-        background-color: cyan;
-    }
-
     .side_bar {
         padding: 0px;
         margin: 0px;
@@ -141,7 +137,27 @@
     .product_image {
         height: 240px;
     }
+
+    /* Style for the items in the container */
+    .select-item {
+        margin: 0px;
+        padding: 0px;
+        background-color: #f0f0f0;
+        cursor: pointer;
+    }
+
+    /* Style for selected items */
+    .selected {
+        background-color: #007bff;
+        color: #fff;
+    }
     </style>
+
+    <script>
+    function resetForm() {
+        document.getElementById("form_filter").reset();
+    }
+    </script>
 
 </head>
 
@@ -151,6 +167,7 @@ include 'navbar.php';
 ?>
 
     <div class="container-fluid" style="margin-top:118px;">
+
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.php">Home</a></li>
@@ -161,8 +178,10 @@ include 'navbar.php';
     <div class="container-fluid">
         Footwear - 120 items
         <div class="row">
-            <div class="col-md-3 col-lg-3 col-sm-3">
-                FILTERS
+            <div class="col-md-3 col-lg-3 col-sm-3 d-flex">
+                <div>FILTERS</div>
+                <div class="ml-5"><input type="reset" value="Clear All" class="border-white bg-white"
+                        onclick="resetForm()"></div>
             </div>
             <div class="col-md-7 col-lg-7 col-sm-7">
                 <ul class="d-flex">
@@ -189,508 +208,517 @@ include 'navbar.php';
     </div>
     <!-- body sidebar property content code -->
     <div class="container-fluid">
+
         <div class="row">
             <div class="col-md-2 side_bar">
-                <div id="accordion">
-                    <details class="accordion border border-0 mb-2 p-1">
-                        <summary class="accordion-header">
-                            <div class="accordion-header-content">
-                                <span class="accordion-header-content-label text-dark">Gender</span>
-                            </div>
-                        </summary>
-                        <div class="accordion-content">
-                            <div class="card-body">
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Man</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Women</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Girls</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Boys</span>
-                                </span>
-                            </div>
-                        </div>
-                    </details>
-                    <details class="accordion border border-0 mb-2 p-1">
-                        <summary class="accordion-header">
-                            <div class="accordion-header-content">
-                                <span class="accordion-header-content-label text-dark">Size</span>
-                            </div>
-                        </summary>
-                        <div class="accordion-content">
-                            <p class="accordion-content-text">
-                            <div class="row size_section">
-                                <div class="col-xs-3 p-2">
-                                    <button class="btn btn-white border border-secondary rounded-0">06</button>
+                <form action="#" method="post" id="form_filter">
+                    <div id="accordion">
+                        <details class="accordion border border-0 mb-2 p-1">
+                            <summary class="accordion-header">
+                                <div class="accordion-header-content">
+                                    <span class="accordion-header-content-label text-dark">Gender</span>
                                 </div>
-                                <div class="col-xs-3 p-2">
-                                    <button class="btn btn-white border border-secondary rounded-0">07</button>
-                                </div>
-                                <div class="col-xs-3 p-2">
-                                    <button class="btn btn-white border border-secondary rounded-0">08</button>
-                                </div>
-                                <div class="col-xs-3 p-2">
-                                    <button class="btn btn-white border border-secondary rounded-0">09</button>
-                                </div>
-                                <div class="col-xs-3 p-2">
-                                    <button class="btn btn-white border border-secondary rounded-0">10</button>
-                                </div>
-                                <div class="col-xs-3 p-2">
-                                    <button class="btn btn-white border border-secondary rounded-0">11</button>
-                                </div>
-                                <div class="col-xs-3 p-2">
-                                    <button class="btn btn-white border border-secondary rounded-0">41</button>
-                                </div>
-                                <div class="col-xs-3 p-2">
-                                    <button class="btn btn-white border border-secondary rounded-0">42</button>
-                                </div>
-                                <div class="col-xs-3 p-2">
-                                    <button class="btn btn-white border border-secondary rounded-0">43</button>
-                                </div>
-                                <div class="col-xs-3 p-2">
-                                    <button class="btn btn-white border border-secondary rounded-0">44</button>
-                                </div>
-                                <div class="col-xs-3 p-2">
-                                    <button class="btn btn-white border border-secondary rounded-0">45</button>
+                            </summary>
+                            <div class="accordion-content">
+                                <div class="card-body">
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Man</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Women</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Girls</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Boys</span>
+                                    </span>
                                 </div>
                             </div>
-                            </p>
-                        </div>
-                    </details>
-                    <details class="accordion border border-0 mb-2 p-1">
-                        <summary class="accordion-header">
-                            <div class="accordion-header-content">
-                                <span class="accordion-header-content-label text-dark">Brand</span>
+                        </details>
+                        <details class="accordion border border-0 mb-2 p-1">
+                            <summary class="accordion-header">
+                                <div class="accordion-header-content">
+                                    <span class="accordion-header-content-label text-dark">Size</span>
+                                </div>
+                            </summary>
+                            <div class="accordion-content">
+                                <p class="accordion-content-text">
+                                <div class="row size_section">
+                                    <div class="select-container row pl-3" id="selectContainer">
+                                        <div class="col-xs-3 p-2">
+                                            <input class="select-item p-1" data-value="item1" type="button" value="06">
+                                        </div>
+                                        <div class="col-xs-3 p-2">
+                                            <input class="select-item p-1" data-value="item2" type="button" value="07">
+                                        </div>
+                                        <div class="col-xs-3 p-2">
+                                            <input class="select-item p-1" data-value="item3" type="button" value="08">
+                                        </div>
+                                        <div class="col-xs-3 p-2">
+                                            <input class="select-item p-1" data-value="item4" type="button" value="09">
+                                        </div>
+                                        <div class="col-xs-3 p-2">
+                                            <input class="select-item p-1" data-value="item5" type="button" value="10">
+                                        </div>
+                                        <div class="col-xs-3 p-2">
+                                            <input class="select-item p-1" data-value="item6" type="button" value="11">
+                                        </div>
+                                        <div class="col-xs-3 p-2">
+                                            <input class="select-item p-1" data-value="item7" type="button" value="41">
+                                        </div>
+                                        <div class="col-xs-3 p-2">
+                                            <input class="select-item p-1" data-value="item8" type="button" value="42">
+                                        </div>
+                                        <div class="col-xs-3 p-2">
+                                            <input class="select-item p-1" data-value="item9" type="button" value="43">
+                                        </div>
+                                        <div class="col-xs-3 p-2">
+                                            <input class="select-item p-1" data-value="item10" type="button" value="44">
+                                        </div>
+                                        <div class="col-xs-3 p-2">
+                                            <input class="select-item p-1" data-value="item11" type="button" value="45">
+                                        </div>
+                                    </div>
+                                </div>
+                                </p>
                             </div>
-                        </summary>
-                        <div class="accordion-content">
-                            <div class="card-body brand_container scroll_container">
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">J . Fontini</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Mochi</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Genx</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Language</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Von Wellx</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">ID</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Buckaroo</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Egoss</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Mardi Gras</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Activ</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Doubleu</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Ecco-Gt</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Crocs</span>
-                                </span>
+                        </details>
+                        <details class="accordion border border-0 mb-2 p-1">
+                            <summary class="accordion-header">
+                                <div class="accordion-header-content">
+                                    <span class="accordion-header-content-label text-dark">Brand</span>
+                                </div>
+                            </summary>
+                            <div class="accordion-content">
+                                <div class="card-body brand_container scroll_container">
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">J . Fontini</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Mochi</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Genx</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Language</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Von Wellx</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">ID</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Buckaroo</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Egoss</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Mardi Gras</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Activ</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Doubleu</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Ecco-Gt</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Crocs</span>
+                                    </span>
+                                </div>
                             </div>
-                        </div>
-                    </details>
-                    <details class="accordion border border-0 mb-2 p-1">
-                        <summary class="accordion-header">
-                            <div class="accordion-header-content">
-                                <span class="accordion-header-content-label text-dark">Price</span>
-                            </div>
-                        </summary>
-                        <div class="accordion-content">
-                            <div class="card-body">
+                        </details>
+                        <details class="accordion border border-0 mb-2 p-1">
+                            <summary class="accordion-header">
+                                <div class="accordion-header-content">
+                                    <span class="accordion-header-content-label text-dark">Price</span>
+                                </div>
+                            </summary>
+                            <div class="accordion-content">
+                                <div class="card-body">
 
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Rs. 0 To Rs. 1000</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Rs. 1001 To Rs. 2000</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Rs. 2001 To Rs. 3000</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Rs. 3001 To Rs. 4000</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Rs. 4001 To Rs. 5000</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Rs. 5001 To Rs. 6000</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Rs. 6001 To Rs. 7000</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">More Than Rs. 7000</span>
-                                </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Rs. 0 To Rs. 1000</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Rs. 1001 To Rs. 2000</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Rs. 2001 To Rs. 3000</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Rs. 3001 To Rs. 4000</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Rs. 4001 To Rs. 5000</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Rs. 5001 To Rs. 6000</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Rs. 6001 To Rs. 7000</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">More Than Rs. 7000</span>
+                                    </span>
+                                </div>
                             </div>
-                        </div>
-                    </details>
-                    <details class="accordion border border-0 mb-2 p-1">
-                        <summary class="accordion-header">
-                            <div class="accordion-header-content">
-                                <span class="accordion-header-content-label text-dark">Heel Type</span>
+                        </details>
+                        <details class="accordion border border-0 mb-2 p-1">
+                            <summary class="accordion-header">
+                                <div class="accordion-header-content">
+                                    <span class="accordion-header-content-label text-dark">Heel Type</span>
+                                </div>
+                            </summary>
+                            <div class="accordion-content">
+                                <div class="card-body">
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Regular</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Flats</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Block</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Wedges</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Platform</span>
+                                    </span>
+                                </div>
                             </div>
-                        </summary>
-                        <div class="accordion-content">
-                            <div class="card-body">
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Regular</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Flats</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Block</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Wedges</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Platform</span>
-                                </span>
+                        </details>
+                        <details class="accordion border border-0 mb-2 p-1">
+                            <summary class="accordion-header">
+                                <div class="accordion-header-content">
+                                    <span class="accordion-header-content-label text-dark">Heel height</span>
+                                </div>
+                            </summary>
+                            <div class="accordion-content">
+                                <div class="card-body">
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">1.5</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">2.0</span>
+                                    </span>
+                                </div>
                             </div>
-                        </div>
-                    </details>
-                    <details class="accordion border border-0 mb-2 p-1">
-                        <summary class="accordion-header">
-                            <div class="accordion-header-content">
-                                <span class="accordion-header-content-label text-dark">Heel height</span>
+                        </details>
+                        <details class="accordion border border-0 mb-2 p-1">
+                            <summary class="accordion-header">
+                                <div class="accordion-header-content">
+                                    <span class="accordion-header-content-label text-dark">Type</span>
+                                </div>
+                            </summary>
+                            <div class="accordion-content">
+                                <div class="card-body type_container scroll_container">
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Lace Up</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Boots</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Moccasin</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Chappals</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Kolhapuris</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Sandals</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Jutis</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Oxford</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Brogue</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Sneakers</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Pathanis</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Monk</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Comfort</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Paduka</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Flip Flops</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Clogs</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Slippers</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Slip Ons</span>
+                                    </span>
+                                </div>
                             </div>
-                        </summary>
-                        <div class="accordion-content">
-                            <div class="card-body">
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">1.5</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">2.0</span>
-                                </span>
+                        </details>
+                        <details class="accordion border border-0 mb-2 p-1">
+                            <summary class="accordion-header">
+                                <div class="accordion-header-content">
+                                    <span class="accordion-header-content-label text-dark">Lining Material</span>
+                                </div>
+                            </summary>
+                            <div class="accordion-content">
+                                <div class="card-body">
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Leather</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Synthetic</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Fabric</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">N/A</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Croslite</span>
+                                    </span>
+                                </div>
                             </div>
-                        </div>
-                    </details>
-                    <details class="accordion border border-0 mb-2 p-1">
-                        <summary class="accordion-header">
-                            <div class="accordion-header-content">
-                                <span class="accordion-header-content-label text-dark">Type</span>
-                            </div>
-                        </summary>
-                        <div class="accordion-content">
-                            <div class="card-body type_container scroll_container">
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Lace Up</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Boots</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Moccasin</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Chappals</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Kolhapuris</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Sandals</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Jutis</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Oxford</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Brogue</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Sneakers</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Pathanis</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Monk</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Comfort</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Paduka</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Flip Flops</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Clogs</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Slippers</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Slip Ons</span>
-                                </span>
-                            </div>
-                        </div>
-                    </details>
-                    <details class="accordion border border-0 mb-2 p-1">
-                        <summary class="accordion-header">
-                            <div class="accordion-header-content">
-                                <span class="accordion-header-content-label text-dark">Lining Material</span>
-                            </div>
-                        </summary>
-                        <div class="accordion-content">
-                            <div class="card-body">
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Leather</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Synthetic</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Fabric</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">N/A</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Croslite</span>
-                                </span>
-                            </div>
-                        </div>
-                    </details>
-                    <details class="accordion border border-0 mb-2 p-1">
-                        <summary class="accordion-header">
-                            <div class="accordion-header-content">
-                                <span class="accordion-header-content-label text-dark">Sole Width</span>
-                            </div>
-                        </summary>
-                        <div class="accordion-content">
-                            <div class="card-body">
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Narrow</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Medium</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Wide</span>
-                                </span>
+                        </details>
+                        <details class="accordion border border-0 mb-2 p-1">
+                            <summary class="accordion-header">
+                                <div class="accordion-header-content">
+                                    <span class="accordion-header-content-label text-dark">Sole Width</span>
+                                </div>
+                            </summary>
+                            <div class="accordion-content">
+                                <div class="card-body">
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Narrow</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Medium</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Wide</span>
+                                    </span>
 
+                                </div>
                             </div>
-                        </div>
-                    </details>
-                    <details class="accordion border border-0 mb-2 p-1">
-                        <summary class="accordion-header">
-                            <div class="accordion-header-content">
-                                <span class="accordion-header-content-label text-dark">Discount</span>
+                        </details>
+                        <details class="accordion border border-0 mb-2 p-1">
+                            <summary class="accordion-header">
+                                <div class="accordion-header-content">
+                                    <span class="accordion-header-content-label text-dark">Discount</span>
+                                </div>
+                            </summary>
+                            <div class="accordion-content">
+                                <div class="card-body">
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">0% And Above</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">30% And Above</span>
+                                    </span>
+                                </div>
                             </div>
-                        </summary>
-                        <div class="accordion-content">
-                            <div class="card-body">
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">0% And Above</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">30% And Above</span>
-                                </span>
+                        </details>
+                        <details class="accordion border border-0 mb-2 p-1">
+                            <summary class="accordion-header">
+                                <div class="accordion-header-content">
+                                    <span class="accordion-header-content-label text-dark">Colours</span>
+                                </div>
+                            </summary>
+                            <div class="accordion-content">
+                                <div class="card-body color_container scroll_container">
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="dot_black mt-2 ml-2"></span><span class="d-inline p-1">Black</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="dot_white mt-2 ml-2"></span><span class="d-inline p-1">White</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="dot_gray mt-2 ml-2"></span><span class="d-inline p-1">Gray</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="dot_red mt-2 ml-2"></span><span class="d-inline p-1">Gray</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="dot_green mt-2 ml-2"></span><span class="d-inline p-1">Gray</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="dot_blue mt-2 ml-2"></span><span class="d-inline p-1">Blue</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="dot_yellow mt-2 ml-2"></span><span
+                                            class="d-inline p-1">Yellow</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="dot_orange mt-2 ml-2"></span><span
+                                            class="d-inline p-1">Orange</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="dot_violet mt-2 ml-2"></span><span
+                                            class="d-inline p-1">Violet</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="dot_tomato mt-2 ml-2"></span><span class="d-inline p-1">Tomato
+                                            Color</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="dot_dodgerblue mt-2 ml-2"></span><span class="d-inline p-1">Dodger
+                                            Blue</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="dot_slateblue mt-2 ml-2"></span><span class="d-inline p-1">Slate
+                                            Blue</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="dot_lightgray mt-2 ml-2"></span><span class="d-inline p-1">Light
+                                            Gray</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="dot_aqua mt-2 ml-2"></span><span class="d-inline p-1">Aqua</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="dot_gold mt-2 ml-2"></span><span class="d-inline p-1">Gold</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="dot_olive mt-2 ml-2"></span><span class="d-inline p-1">Olive</span>
+                                    </span>
+                                </div>
                             </div>
-                        </div>
-                    </details>
-                    <details class="accordion border border-0 mb-2 p-1">
-                        <summary class="accordion-header">
-                            <div class="accordion-header-content">
-                                <span class="accordion-header-content-label text-dark">Colours</span>
+                        </details>
+                        <details class="accordion border border-0 mb-2 p-1">
+                            <summary class="accordion-header">
+                                <div class="accordion-header-content">
+                                    <span class="accordion-header-content-label text-dark">Occasion</span>
+                                </div>
+                            </summary>
+                            <div class="accordion-content">
+                                <div class="card-body">
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Formal</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Ethnic</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Party</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Casual</span>
+                                    </span>
+                                    <span class="d-flex">
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                        <span class="ml-2">Sports</span>
+                                    </span>
+                                </div>
                             </div>
-                        </summary>
-                        <div class="accordion-content">
-                            <div class="card-body color_container scroll_container">
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="dot_black mt-2 ml-2"></span><span class="d-inline p-1">Black</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="dot_white mt-2 ml-2"></span><span class="d-inline p-1">White</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="dot_gray mt-2 ml-2"></span><span class="d-inline p-1">Gray</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="dot_red mt-2 ml-2"></span><span class="d-inline p-1">Gray</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="dot_green mt-2 ml-2"></span><span class="d-inline p-1">Gray</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="dot_blue mt-2 ml-2"></span><span class="d-inline p-1">Blue</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="dot_yellow mt-2 ml-2"></span><span class="d-inline p-1">Yellow</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="dot_orange mt-2 ml-2"></span><span class="d-inline p-1">Orange</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="dot_violet mt-2 ml-2"></span><span class="d-inline p-1">Violet</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="dot_tomato mt-2 ml-2"></span><span class="d-inline p-1">Tomato
-                                        Color</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="dot_dodgerblue mt-2 ml-2"></span><span class="d-inline p-1">Dodger
-                                        Blue</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="dot_slateblue mt-2 ml-2"></span><span class="d-inline p-1">Slate
-                                        Blue</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="dot_lightgray mt-2 ml-2"></span><span class="d-inline p-1">Light
-                                        Gray</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="dot_aqua mt-2 ml-2"></span><span class="d-inline p-1">Aqua</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="dot_gold mt-2 ml-2"></span><span class="d-inline p-1">Gold</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="dot_olive mt-2 ml-2"></span><span class="d-inline p-1">Olive</span>
-                                </span>
-                            </div>
-                        </div>
-                    </details>
-                    <details class="accordion border border-0 mb-2 p-1">
-                        <summary class="accordion-header">
-                            <div class="accordion-header-content">
-                                <span class="accordion-header-content-label text-dark">Occasion</span>
-                            </div>
-                        </summary>
-                        <div class="accordion-content">
-                            <div class="card-body">
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Formal</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Ethnic</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Party</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Casual</span>
-                                </span>
-                                <span class="d-flex">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                    <span class="ml-2">Sports</span>
-                                </span>
-                            </div>
-                        </div>
-                    </details>
-                </div>
+                        </details>
+                    </div>
+                </form>
             </div>
+
             <div class="col-md-10">
 
                 <section class="inspired_product_area section_gap_bottom_custom">
@@ -1058,9 +1086,18 @@ include 'navbar.php';
                 </section>
             </div>
         </div>
-
     </div>
+    <script>
+    // JavaScript to handle item selection
+    const selectContainer = document.getElementById('selectContainer');
+    const items = selectContainer.querySelectorAll('.select-item');
 
+    items.forEach(item => {
+        item.addEventListener('click', () => {
+            item.classList.toggle('selected');
+        });
+    });
+    </script>
     <?php
 include 'footer.php';
 ?>

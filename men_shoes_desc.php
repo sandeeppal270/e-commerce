@@ -32,6 +32,11 @@
     <!-- material icon -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <style>
+        .pincode_input{
+            height:45px;
+        }
+    </style>
 
 </head>
 
@@ -115,7 +120,8 @@
                     <h4 class="pl-3"><span class="badge badge-danger">Deal of the Day</span></h4>
                 </div>
                 <div class="row mt-3">
-                    <span class="rupees"><span class="text-danger"> - 20% </span><strong>Rs.4,000.00</strong></span><small><del>₹4,800.00</del></small><br>
+                    <span class="rupees"><span class="text-danger"> - 20%
+                        </span><strong>Rs.4,000.00</strong></span><small><del>₹4,800.00</del></small><br>
                 </div>
                 <div class="row">
                     <small>(Inclusive of all taxes)</small>
@@ -128,7 +134,7 @@
                     <!-- <span class="flex-end">Size Chart</span> -->
                 </div>
                 <div class="row mt-3">
-                <div class="size_section">
+                    <div class="size_section">
                         <input label="1" type="radio" name="gender" value="1">
                         <input label="2" type="radio" name="gender" value="2">
                         <input label="3" type="radio" name="gender" value="3">
@@ -137,7 +143,7 @@
                         <input label="12" type="radio" name="gender" value="12">
                         <input label="13" type="radio" name="gender" value="13">
                     </div>
-                   
+
                 </div>
                 <div class="row mt-4">
                     <span class="size">AVIALABLE COLORS</span>
@@ -173,22 +179,25 @@
 
                 </div>
                 <div class="row mt-5">
-                    <button class="btn btn-light btn-lg border-secondary" title="add to cart">ADD TO CART</button>
-                    <button class="btn btn-success btn-lg mx-4" title="buy now">BUY NOW</button>
+                    <button class="main_btn bg-secondary text-white" title="add to cart">ADD TO CART</button>
+                    <button class="main_btn mx-3" title="buy now">BUY NOW</button>
                 </div>
                 <div class="row mt-5">
                     <span class="size">DELIVERY OPTIONS</span>
                 </div>
                 <div class="row mt-3">
                     <form action="">
-                        <div class="d-flex">
-                            <input class="form-control input-lg" id="inputlg" type="text" placeholder="Check Pincode"
-                                size="30">
-                            <button class="btn btn-success btn-md text-center">CHECK</button>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control pincode_input" size="25" placeholder="Check Pincode"
+                                aria-label="Check" aria-describedby="button-addon2">
+                            <div class="input-group-append">
+                                <button class="main_btn" type="button"
+                                    id="button-addon2">Check</button>
+                            </div>
                         </div>
                     </form>
                 </div>
-                <div class="row mt-5 icon-section">
+                <div class="row mt-3 icon-section">
                     <i class="fa fa-truck" aria-hidden="true"></i>
                     <span class="ml-2">Free shipping on above Rs. 600</span>
                 </div>
@@ -487,19 +496,19 @@
                     <form action="">
                         <div class="form-group your_rating">
                             <label for="name">Name <sup>*</sup></label>
-                            <input type="text" class="form-control" name="name" placeholder="Name">
+                            <input type="text" class="form-control" name="name" placeholder="Name" autocomplete="off" title="Name" required>
                         </div>
                         <div class="form-group your_rating">
                             <label for="title">Title <sup>*</sup></label>
-                            <input type="text" class="form-control" name="title" placeholder="Title">
+                            <input type="text" class="form-control" name="title" placeholder="Title" autocomplete="off" title="Title" required>
                         </div>
                         <div class="form-group your_rating">
                             <label for="">Your Review <sup>*</sup></label>
                             <input type="text" class="form-control" name="your_review"
-                                placeholder="Your Review Description">
+                                placeholder="Your Review Description" autocomplete="off" title="Discription" required>
                         </div>
                         <div class="form-group mt-5 your_rating">
-                            <input type="submit" class="btn btn-success btn-lg" name="submit">
+                            <input type="submit" class="main_btn" name="submit" required>
                         </div>
                     </form>
                 </div>

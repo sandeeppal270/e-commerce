@@ -840,18 +840,8 @@
                 </div>
             </div>
             <div class="col-md-9">
-
                 <section class="inspired_product_area section_gap_bottom_custom">
                     <div class="container">
-                        <!-- <div class="row justify-content-center">
-                            <div class="col-lg-12">
-                                <div class="main_title">
-                                    <h2><span>Inspired products</span></h2>
-                                    <p>Bring called seed first of third give itself now ment</p>
-                                </div>
-                            </div>
-                        </div> -->
-
                         <div class="row">
                             <div class="col-lg-3 col-md-6">
                                 <div class="single-product card_section">
@@ -882,7 +872,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="col-lg-3 col-md-6">
                                 <div class="single-product card_section">
                                     <div class="product-img">
