@@ -3,7 +3,7 @@ include 'header.php';
 ?>
 
 <body>
-    <?php
+<?php
 include 'navbar.php';
 ?>
 
@@ -780,7 +780,7 @@ include 'navbar.php';
                 <h3 class="category text-uppercase"><span>Unmissable Deals</span></h3>
                 <p class="text-center">We connect buyers and sellers</p>
             </div>
-        
+
             <div class="row justify-content-center">
                 <div class="product-item d-flex">
                     <div class="col-sm-6">
@@ -843,7 +843,7 @@ include 'navbar.php';
             </div>
         </div>
     </section>
-   
+
     <!-- End feature Area -->
 
     <!--================ start footer Area  =================-->

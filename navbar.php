@@ -112,6 +112,7 @@
     }
     </style>
 </head>
+
 <body>
     <nav class="navbar">
         <div class="container-fluid bg-light" id="top_bar">
