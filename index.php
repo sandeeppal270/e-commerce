@@ -7,7 +7,7 @@ include 'header.php';
 include 'navbar.php';
 ?>
 
-    <!--================Home Banner Area sec =================-->
+    <!--================Home Banner Area sec ==================-->
 
     <!--================End Home Banner Area =================-->
 
