@@ -137,13 +137,26 @@
     .product_image {
         height: 240px;
     }
+    /* css for multiple box selection */
+    .select-item {
+        margin: 0px;
+        padding: 0px;
+        background-color: #f0f0f0;
+        cursor: pointer;
+    }
+
+    /* Style for selected items */
+    .selected {
+        background-color: #007bff;
+        color: #fff;
+    }
     </style>
     <script>
     function resetForm() {
         document.getElementById("form_filter").reset();
     }
     </script>
-   
+
 </head>
 
 <body>
@@ -207,38 +220,40 @@ include 'navbar.php';
                             <div class="accordion-content">
                                 <p class="accordion-content-text">
                                 <div class="row size_section">
-                                    <div class="col-xs-3 p-2 myDivs" id="1">
-                                        <input type="button" value="06">
-                                    </div>
-                                    <div class="col-xs-3 p-2 myDivs" id="2">
-                                        <input type="button" value="07">
-                                    </div>
-                                    <div class="col-xs-3 p-2 myDivs" id="3">
-                                        <input type="button" value="08">
-                                    </div>
-                                    <div class="col-xs-3 p-2 myDivs" id="4">
-                                        <input type="button" value="09">
-                                    </div>
-                                    <div class="col-xs-3 p-2 myDivs" id="5">
-                                        <input type="button" value="10">
-                                    </div>
-                                    <div class="col-xs-3 p-2 myDivs" id="6">
-                                        <input type="button" value="11">
-                                    </div>
-                                    <div class="col-xs-3 p-2 myDivs" id="7">
-                                        <input type="button" value="41">
-                                    </div>
-                                    <div class="col-xs-3 p-2 myDivs" id="8">
-                                        <input type="button" value="42">
-                                    </div>
-                                    <div class="col-xs-3 p-2 myDivs" id="9">
-                                        <input type="button" value="43">
-                                    </div>
-                                    <div class="col-xs-3 p-2 myDivs" id="10">
-                                        <input type="button" value="44">
-                                    </div>
-                                    <div class="col-xs-3 p-2 myDivs" id="11">
-                                        <input type="button" value="45">
+                                    <div class="select-container row pl-3" id="selectContainer">
+                                        <div class="col-xs-3 p-2">
+                                            <input class="select-item p-1" data-value="item1" type="button" value="06">
+                                        </div>
+                                        <div class="col-xs-3 p-2">
+                                            <input class="select-item p-1" data-value="item2" type="button" value="07">
+                                        </div>
+                                        <div class="col-xs-3 p-2">
+                                            <input class="select-item p-1" data-value="item3" type="button" value="08">
+                                        </div>
+                                        <div class="col-xs-3 p-2">
+                                            <input class="select-item p-1" data-value="item4" type="button" value="09">
+                                        </div>
+                                        <div class="col-xs-3 p-2">
+                                            <input class="select-item p-1" data-value="item5" type="button" value="10">
+                                        </div>
+                                        <div class="col-xs-3 p-2">
+                                            <input class="select-item p-1" data-value="item6" type="button" value="11">
+                                        </div>
+                                        <div class="col-xs-3 p-2">
+                                            <input class="select-item p-1" data-value="item7" type="button" value="41">
+                                        </div>
+                                        <div class="col-xs-3 p-2">
+                                            <input class="select-item p-1" data-value="item8" type="button" value="42">
+                                        </div>
+                                        <div class="col-xs-3 p-2">
+                                            <input class="select-item p-1" data-value="item9" type="button" value="43">
+                                        </div>
+                                        <div class="col-xs-3 p-2">
+                                            <input class="select-item p-1" data-value="item10" type="button" value="44">
+                                        </div>
+                                        <div class="col-xs-3 p-2">
+                                            <input class="select-item p-1" data-value="item11" type="button" value="45">
+                                        </div>
                                     </div>
                                 </div>
                                 </p>
@@ -997,6 +1012,17 @@ include 'navbar.php';
         </div>
 
     </div>
+    <script>
+    // JavaScript to handle item selection
+    const selectContainer = document.getElementById('selectContainer');
+    const items = selectContainer.querySelectorAll('.select-item');
+
+    items.forEach(item => {
+        item.addEventListener('click', () => {
+            item.classList.toggle('selected');
+        });
+    });
+    </script>
 
     <?php
 include 'footer.php';
